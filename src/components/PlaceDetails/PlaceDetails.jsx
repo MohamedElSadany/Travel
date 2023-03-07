@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Box, Typography, Button, Card, CardMedia, CardContent, CardActions, Chip } from '@material-ui/core';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneIcon from '@material-ui/icons/Phone';
+import Rating from '@material-ui/lab/Rating';
 
-const  PlaceDetails = () => {
+const  PlaceDetails = ({place}) => {
   return (
-    <h3>
-      PlaceDetails
-    </h3>
+    <h3>{place.name}</h3>
   )
 }
 
