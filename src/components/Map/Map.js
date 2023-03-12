@@ -26,6 +26,7 @@ const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked}) => {
         onChildClick={(child) => setChildClicked(child)}
 
       >
+      
       {places.length && places.map((place, i) => (
         <div
           className={classes.markerContainer}
@@ -46,8 +47,7 @@ const Map = ({setCoordinates,setBounds,coordinates,places,setChildClicked}) => {
               </Paper>
             )}
         </div>
-      ))}
-          
+      ))}   
       
       </GoogleMapReact>
     </div>
